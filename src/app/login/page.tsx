@@ -47,13 +47,13 @@ const onSubmit: SubmitHandler<FormType> = async ({ email, password }) => {
           <h1 className='text-white font-semibold text-4xl'>Sign In</h1>
               <div className="space-y-4">
                 <label className='inline-block  w-full'>
-                  <input type="email" placeholder='E-mail' id="" className='input' {...register('email', { required: true })}/>
+                  <input type="email" placeholder='E-mail' className='input' {...register('email', { required: true })}/>
                   {errors.email && (<p className="p-1 text-[13px] font-light  text-orange-500">
                     Please enter a valid email.
                   </p>)}
                 </label>
                 <label className='inline-block  w-full'>
-              <input type="password" placeholder='Password' id="" className='input'{...register('password', { required: true })}/>
+              <input type="password" placeholder='Password' className='input'{...register('password', { required: true })}/>
               {errors.password && (<p className="p-1 text-[13px] font-light  text-orange-500">
               Your password must contain between 4 and 60 characters.
               </p>)}

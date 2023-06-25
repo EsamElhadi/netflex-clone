@@ -72,7 +72,7 @@ const Modal = () => {
               <button className="flex items-center gap-x-2 rounded bg-white px-4 md:px-8 text-xl font-semibold text-black transition hover:bg-[#e6e6e6]" onClick={handlePlay}>
                 {play ? (<StopIcon className="h-6 w-6 text-black" />) : (<PlayIcon className="h-6 w-6 text-black"/>)}
                 
-                Play
+                {play ? 'Stop' : 'Play'}
               </button>
 
               <button className="modalButton">

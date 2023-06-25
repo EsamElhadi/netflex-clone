@@ -1,3 +1,4 @@
+'use client'
 import useInfoModalStore from '@/hooks/useInfoModalStore'
 import React, { useCallback } from 'react'
 import { Movie } from 'typings'

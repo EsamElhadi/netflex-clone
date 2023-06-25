@@ -28,7 +28,7 @@ function Row({movies, title}: Props) {
     <>
     <div className='ml-4'>
       <h1 className='text-white  text-lg font-medium'>{title}</h1>
-<div className='relative group w-[270px] sm:w-auto'>
+<div className='relative group w-72 sm:w-auto'>
 
       <ChevronLeftIcon  className={` chevronIcon left-2 ${!isMoved && 'hidden'}`}
       onClick={() => handleClick("left")}/>

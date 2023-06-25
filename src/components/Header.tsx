@@ -4,7 +4,7 @@ import {BellIcon, MagnifyingGlassIcon} from '@heroicons/react/20/solid'
 import logo from '../../public/Netflix_logo.svg'
 import accountLogo from '../../public/account-logo.png'
 
-import './Header.css'
+
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import useAuth from '@/hooks/useAuth'

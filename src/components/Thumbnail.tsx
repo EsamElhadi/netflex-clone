@@ -16,7 +16,7 @@ function Thumbnail({movie} : Props) {
 
   return (
     <>
-    <div className='mx-1 mt-1 h-36 w-56 md:hover:scale-105 transition duration-100' onClick={handleOpenModal}>
+    <div className='mx-1 mt-1 h-40 w-60 sm:h-36 sm:w-56 md:hover:scale-105 transition duration-100' onClick={handleOpenModal}>
       <img
         src={`https://image.tmdb.org/t/p/w500${
           movie.backdrop_path || movie.poster_path

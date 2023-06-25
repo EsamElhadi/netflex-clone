@@ -39,7 +39,7 @@ function Row({movies, title}: Props) {
         </div>
       ))}
     </div>
-      <ChevronRightIcon className='chevronIcon right-2'
+      <ChevronRightIcon className='chevronIcon right-2 opacity-100'
       onClick={() => handleClick("right")}/>
     </div>
       </div>

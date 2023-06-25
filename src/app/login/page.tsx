@@ -30,7 +30,7 @@ const onSubmit: SubmitHandler<FormType> = async ({ email, password }) => {
   if (login) {
     await signIn(email, password)
   } else {
-    console.log('IT Sign Up', email, password)
+    await signUp(email, password)
   }
 }
 

@@ -33,7 +33,7 @@ function Row({movies, title}: Props) {
       <ChevronLeftIcon  className={` chevronIcon left-2 ${!isMoved && 'hidden'}`}
       onClick={() => handleClick("left")}/>
     <div ref={rowRef} className='flex overflow-x-scroll px-1 scrollbar-hide h-40'>
-      {movies.map((movie : Movie) => (
+      {movies?.map((movie : Movie) => (
         <div key={movie.id}>
           <Thumbnail movie={movie}/>
         </div>

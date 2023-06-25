@@ -70,7 +70,7 @@ const Modal = () => {
           <div className="absolute bottom-4 md:bottom-10 flex w-full items-center justify-between px-4 md:px-10">
             <div className="flex space-x-2">
               <button className="flex items-center gap-x-2 rounded bg-white px-4 md:px-8 text-xl font-semibold text-black transition hover:bg-[#e6e6e6]" onClick={handlePlay}>
-                {play ? (<PlayIcon className="h-6 w-6 text-black" />) : (<StopIcon className="h-6 w-6 text-black"/>)}
+                {play ? (<StopIcon className="h-6 w-6 text-black" />) : (<PlayIcon className="h-6 w-6 text-black"/>)}
                 
                 Play
               </button>

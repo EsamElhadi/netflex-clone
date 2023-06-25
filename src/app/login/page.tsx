@@ -29,10 +29,8 @@ const { register, handleSubmit, formState: {errors}, } = useForm<FormType>({reso
 const onSubmit: SubmitHandler<FormType> = async ({ email, password }) => {
   if (login) {
     await signIn(email, password)
-    console.log('IT Sign In', email, password)
   } else {
     console.log('IT Sign Up', email, password)
-    await signUp(email, password)
   }
 }
 
